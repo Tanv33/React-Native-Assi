@@ -14,7 +14,7 @@ import {StyleSheet, View} from 'react-native';
 function SignupScreen({navigation}) {
   const handleSubmitFunction = values => {
     console.log(values);
-    if (values.email.length || values.email.length || values.password.length) {
+    if (values.email.length && values.email.length && values.password.length) {
       navigation.navigate('Login');
     }
   };
